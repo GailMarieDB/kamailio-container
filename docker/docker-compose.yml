@@ -1,0 +1,19 @@
+version: '2'
+services:
+  kamailio:
+    image: kamailio
+    network_mode: "host"
+    environment:
+
+      - DEPLOY_MODE=1
+
+      - SIP_DOMAIN=kamailio.org
+
+      - DISPATCHER_PING_FROM=sip:kamailio.org
+
+      - RTPPROXY_RTP_PORT_MIN=16000
+
+      - RTPPROXY_RTP_PORT_MAX=16100
+
+      # space-delimited list for the UACs you wish to load balance across
+      - UAC_ENDPOINTS=
