@@ -15,5 +15,5 @@ services:
 
       - RTPPROXY_RTP_PORT_MAX=16100
 
-      # space-delimited list for the UACs you wish to load balance across
-      - UAC_ENDPOINTS=
+      # space-delimited list of UAS's you wish to load balance across
+      - UAS_ENDPOINTS=

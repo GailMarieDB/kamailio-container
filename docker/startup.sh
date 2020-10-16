@@ -58,7 +58,7 @@ sed -i "s/<DISPATCHER_PING_FROM>/$DISPATCHER_PING_FROM/" /usr/local/etc/kamailio
 rtpproxy -s udp:127.0.0.1:7722 -m $RTPPROXY_RTP_PORT_MIN -M $RTPPROXY_RTP_PORT_MAX -F
 
 
-for i in $UAC_ENDPOINTS
+for i in $UAS_ENDPOINTS
 do
 	kamctl dispatcher add 1 sip:$i 9 0 '' ''
 done

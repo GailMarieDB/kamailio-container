@@ -16,9 +16,9 @@
 
 Set your preferred deploy mode using the `DEPLOY_MODE` environment variable in `docker-compose.yml`
 
-### UAC Endpoints
+### UAS Endpoints
 
-Set your UAC endpoints as a space-delimited list using the `UAC_ENDPOINTS` environment variable in `docker-compose.yml`
+Set your UAS endpoints as a space-delimited list using the `UAS_ENDPOINTS` environment variable in `docker-compose.yml`
 
 ### Optional environment variables
 
